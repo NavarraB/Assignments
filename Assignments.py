@@ -65,3 +65,25 @@ if given_arm_num1 == given_arm_num2:
 else:
     print('{} is not an Armstrong number'.format(given_arm_num1))
 
+
+# In[ ]:
+
+
+# Assignment - 4 (Is it a Prime Number?)
+pnumber = input('Give me a number: ')
+while pnumber.isdecimal() != True:
+    print('Positive integer number please')
+    pnumber = input('Give me a number: ')
+pnumber = int(pnumber)
+a = 0
+for i in range(1,(pnumber+1)):
+    if pnumber % i == 0:
+        a += 1
+if pnumber == 1:
+    print(pnumber, 'is not a prime number')
+else:
+    if a > 2:
+        print(pnumber, 'is not a prime number')
+    else:
+        print(pnumber, 'is a prime number')
+
