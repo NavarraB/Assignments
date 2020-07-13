@@ -79,11 +79,27 @@ a = 0
 for i in range(1,(pnumber+1)):
     if pnumber % i == 0:
         a += 1
-if pnumber == 1:
+if pnumber in (0, 1):
     print(pnumber, 'is not a prime number')
 else:
     if a > 2:
         print(pnumber, 'is not a prime number')
     else:
         print(pnumber, 'is a prime number')
+
+
+# In[ ]:
+
+
+# Assignment - 5 (Fibonacci Numbers)
+fibonacci = []
+x = 1
+y = 0
+while x < 56:
+    if len(fibonacci) < 1:
+        fibonacci.append(x)
+    fibonacci.append(x)
+    x += fibonacci[y]
+    y += 1
+print(fibonacci)
 
