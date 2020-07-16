@@ -103,3 +103,23 @@ while x < 56:
     y += 1
 print(fibonacci)
 
+
+# In[ ]:
+
+
+# Assignment - 6 (Prime Numbers)
+n = input('Enter a limit number: ')
+while n.isdecimal() != True:
+    print('Give me a integer number')
+    n = input('Enter a limit number: ')
+n = int(n)
+nlist = []
+for i in range (2, n+1):
+    a = 0
+    for x in range (1, i+1):
+        if i % x == 0:
+            a += 1
+    if a == 2:
+        nlist.append(i)
+print(nlist)
+
