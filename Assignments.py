@@ -158,3 +158,20 @@ elif year % 4 == 0:
 else:
     print(year, 'is not a leap year')
 
+
+# In[ ]:
+
+
+# Assignment - 9 (Letters Count)
+sentence = input('Give me sentence: ')
+list_sentence = list(sentence)
+set_sentence = set(list_sentence)
+list2_sentence = list(set_sentence)
+new_dict = {}
+count_list = []
+for i in list2_sentence:
+    count_list.append(list_sentence.count(i))
+for a, b in zip(list2_sentence, count_list):
+    new_dict[a] = b
+print(new_dict)
+
